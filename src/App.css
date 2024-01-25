@@ -1,0 +1,110 @@
+* {
+  font-family: 'gilroy';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all ease 0.3s;
+}
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.main-container {
+  background-color: #9469d4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  transition: all ease-in 0.3s;
+}
+.title {
+  text-transform: capitalize;
+  margin-bottom: 4rem;
+  font-size: 3rem;
+  color: white;
+}
+#text {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+#text::before {
+  content: '“';
+  margin: 5px;
+  font-size: 2rem;
+}
+#text::after {
+  content: ' ”';
+  margin: 5px;
+  font-size: 2rem;
+}
+#author {
+  color: rgb(131, 126, 126);
+  font-weight: 500;
+}
+#quote-box {
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  max-width: 600px;
+  min-width: 300px;
+  height: 60%;
+}
+.text-container {
+  margin: 0 auto;
+  width: 95%;
+  text-align: center;
+  border: none;
+}
+button {
+  border-radius: 5px;
+  border: none;
+  padding: 1rem;
+  background-color: orange;
+  font-size: large;
+  color: white;
+}
+button:hover {
+  background-color: #f5c518;
+}
+a {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+@media screen and (min-width: 300px) {
+  * {
+    font-size: 0.75rem;
+  }
+  .title {
+    font-size: 3.3rem;
+    text-align: center;
+    padding: 10px;
+  }
+  #quote-box {
+    position: relative;
+  }
+  #text {
+    font-size: 2rem;
+  }
+  #author {
+    font-size: 1.4rem;
+  }
+  a {
+    position: absolute;
+    bottom: 4%;
+  }
+  button {
+    position: absolute;
+    bottom: 10%;
+    font-size: 20px;
+  }
+}
