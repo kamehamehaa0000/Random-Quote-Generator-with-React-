@@ -6,4 +6,4 @@ This a one of the Certification projects i made for Freecodecamp.org .
 
 ### Preview :-
 
-![Preview](./public/preview.jpg)
+![Preview](./public/preview.JPG)
